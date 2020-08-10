@@ -17,7 +17,7 @@ body {
 .header{
     position: absolute;
     
-    top: 0;
+    top: 15px;
     width: 100%;
   }
 
@@ -28,6 +28,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: main;
+    align-items: center;
   }
   
   .topnav a {
