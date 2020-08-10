@@ -125,7 +125,7 @@ a:before, a > span:before, a:after, a > span:after {
 h1 {
     font-size: 5em;
     text-align: center; 
-    color: #000000;
+    color: #374054;
 }
 @media all and (max-width:500px) {
     h1 {
@@ -149,13 +149,18 @@ h1 {
 
 }
  h2 {
-    color: #22A39F;
+    color: #374054;
     font-weight: 700;
     font-size: 3em;
     text-align: center
 }
 .presentation p {
-    width: 33.3333333333333%
+    width: 33.3333333333333%;
+}
+@media all and (max-width: 600px){
+  .presentation p {
+    width: auto;
+  }
 }
 .avatar {
     vertical-align: middle;
@@ -171,6 +176,11 @@ h1 {
     justify-content: space-evenly;
     align-items: center;
     justify-content: center;
+}
+@media all and (max-width: 600px){
+  .presentation  {
+    flex-direction: column;
+  }
 }
 
 hr {
@@ -258,4 +268,28 @@ hr {
     color: #636363;
     margin-bottom: 1.3rem;
     font-size: .9em;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50vw;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media all and (max-width: 600px) {
+  .skills {
+    width: auto;
+  }
+}
+.fab {
+  margin: 0 30px;
+}
+.fa-star {
+  font-size: 2em;
+}
+@media all and (max-width: 600px) {
+  .fa-star {
+    font-size: 1em;
+  }
 }
