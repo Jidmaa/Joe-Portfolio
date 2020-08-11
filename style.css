@@ -190,18 +190,27 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     width: 70vw;
 }
-.footer {
+.resume {
     grid-area: footer;
     
 }
 .parent {
     
     padding: 50px 15px;
-    border-bottom: 1px solid #dcd9d9;
+    
     text-align: center;
     
   }
-
+  .education {
+    text-align: left;
+    width: 50vw;
+  }
+  @media all and (max-width: 750px)
+  {
+    .education{
+      width: 70vw;
+    }
+  }
   .box {
     width: 100%;
     padding-right: 15px;
@@ -247,7 +256,7 @@ hr {
 }
 .project-info h3 {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 900;
     color: #374054;
     margin-bottom: 2rem;
     margin-top: 0;
@@ -274,13 +283,13 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 50vw;
+  width: 750px;
   flex-wrap: wrap;
   margin: 0 auto;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 760px) {
   .skills {
-    width: auto;
+    width: 300px;
   }
 }
 .fab {
@@ -289,8 +298,42 @@ hr {
 .fa-star {
   font-size: 2em;
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 760px) {
   .fa-star {
     font-size: 1em;
   }
+}
+.education-date {
+  float:right;
+
+}
+.hobbies {
+  margin: 0 auto;
+}
+.hobbies img {
+  margin: 0 80px;
+}
+@media all and (max-width: 760px){
+  .hobbies img {
+    margin: 0 auto;
+  }
+}
+footer {
+  height: 30vh;
+  background-color: #374054;
+}
+footer h2 {
+  color: white;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  background-color: #374054;
+}
+
+.socials a {
+  margin: 0 auto;
 }
